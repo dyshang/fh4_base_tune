@@ -51,6 +51,6 @@ if __name__ == '__main__':
     print(f'Rebound Stiffness Front: {round(((damping_f_max - damping_f_min) * weight_dist + damping_f_min), 1)}')
     print(f'Rebound Stiffness Rear: {round(((damping_r_max - damping_r_min) * (1 - weight_dist) + damping_r_min), 1)}')
     print(
-        f'Bump Stiffness Front: {round((((damping_f_max - damping_f_min) * (1 - weight_dist) + damping_f_min) * 0.6), 1)}')
+        f'Bump Stiffness Front: {round((((damping_f_max - damping_f_min) * weight_dist + damping_f_min) * 0.6), 1)}')
     print(
         f'Bump Stiffness Rear: {round((((damping_r_max - damping_r_min) * (1 - weight_dist) + damping_r_min) * 0.6), 1)}')
